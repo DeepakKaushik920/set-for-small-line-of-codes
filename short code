@@ -2,3 +2,16 @@
   backgroundColor = #colorLiteral(red: 0.4588235294, green: 0.7568627451, blue: 0.7725490196, alpha: 1)
 
   // Waiting for new member here ;)
+
+
+//for alert message
+//Extention funcction banaya ye
+   func showCommonAlert(message : String) {
+          let alert = UIAlertController(title: "Quippy", message: message, preferredStyle: .alert)
+          let okButton = UIAlertAction(title: "OK", style: .default)
+          alert.addAction(okButton)
+          self.present(alert, animated: true)
+      }
+//then Button pe call karaya ye
+      self.showCommonAlert(message: "Under Progress....")
+          print("Term and Conditions")
