@@ -15,3 +15,7 @@
 //then Button pe call karaya ye
       self.showCommonAlert(message: "Under Progress....")
           print("Term and Conditions")
+//MARK: - Set TimerInterval on any task
+ DispatchQueue.main.asyncAfter(deadline: .now() + 5.0, execute: {
+            self.pushToHomeVcBtnOlt.isEnabled = true   // code which need to execute
+        })
